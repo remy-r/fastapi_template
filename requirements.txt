@@ -1,0 +1,10 @@
+starlette
+pydantic
+fastapi
+uvicorn[standard]
+databases
+aiosqlite
+alembic
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]

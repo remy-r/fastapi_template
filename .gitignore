@@ -1,0 +1,4 @@
+Venv
+app/*.log
+app/*.db
+__pycache__
