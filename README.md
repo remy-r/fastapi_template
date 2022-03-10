@@ -1,9 +1,15 @@
 # fastapi_template
 
-## Start Docker Container
+## Docker commands
 
+Start container
 ```
 docker-compose up -d
+```
+
+Stop container
+```
+docker-compose down --rmi all -v
 ```
 
 ## Database properties
