@@ -115,6 +115,8 @@ async def create_user(
 async def delete_user(
     item_id: int, current_user: User = Depends(security_service.get_current_user)
 ):
-    query = security_service.users.delete().where(self.users.c.id == item_id)
+    query = security_service.users.delete().where(
+        security_service.users.c.id == item_id
+    )
     last_record_id = await security_service.database.execute(query)
     return {"data": last_record_id}
